@@ -1,0 +1,36 @@
+
+
+/* Cursor blur effect */
+#cursor-blur {
+    height: 100px;
+    width: 100px;
+    background-color: #00fffb;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 0;
+    filter: blur(30px);
+}
+
+/* Navigation bar styles */
+#nav {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+margin-left: 0;
+    gap: 45px;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+}
+
+#nav img {
+    height: 80px;
+    filter: invert(100%) brightness(200%);
+}
+
+#nav h4 {
+    text-transform: uppercase;
+}
+

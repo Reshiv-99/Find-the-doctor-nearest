@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindtheDoc</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="/MAIN/fav.png" type="image/x-icon">
+
+</head>
+<body>
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="INTRO.html"><img src="/logo/png/ren.png" alt="logo"></a>
+               
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#aboutus" style="color: white;">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                style="color: white;">Map</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: white;">Patient</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Reports</a></li>
+                                    <li><a class="dropdown-item" href="#">My Appointments</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="register.html">Login or Signup</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="cursor-blur"></div>
+    <video src="/MAIN/vid.mp4" autoplay loop muted class="video"></video>
+    <div id="main">
+        <div id="page1">
+            <h1>EVERY . LIFE . MATTERS</h1>
+            <h2>“Dedicated to Care, Committed to Cure.”</h2>
+            <p>Doctor's commitment to patient care extends beyond prescriptions and procedures, providing emotional support and reassurance that can significantly impact a patient's recovery and well-being. The bond between a doctor and patient is built on trust, empathy, and a shared goal of achieving optimal health outcomes.</p>
+        </div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>Diagnosis</h4>
+                    <h4>Treatment</h4>
+                    <h4>Surgery</h4>
+                    <h4>Care</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>Diagnosis</h4>
+                    <h4>Treatment</h4>
+                    <h4>Surgery</h4>
+                    <h4>Care</h4>
+                </div>
+            </div>
+            <br>
+            <center id="aboutus"><h1><b>ABOUT US</b></h1></center>
+            <div id="cards-container">
+                <div class="cards" id="card1">
+                    <div class="overlay">
+                        <h4>Ophthalmologist</h4>
+                        <p>
+                            Your vision is our priority, with specialized eye care services that ensure clarity and health. Our experts are dedicated to preserving the windows to your world, so you can see life in all its vibrant colors.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card2">
+                    <div class="overlay">
+                        <h4>Cardiologist</h4>
+                        <p>
+                            Heart health is at the core of our services, with top cardiologists committed to keeping your heart strong. We understand the importance of a healthy heart, and our care is designed to support your well-being every beat of the way.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card3">
+                    <div class="overlay">
+                        <h4>MRI</h4>
+                        <p>
+                            Our advanced MRI services provide detailed imaging to diagnose and treat complex conditions. With a focus on comfort and accuracy, we ensure that you receive the best possible care for your medical needs. 
+                        </p>
+                    </div>  
+                </div>
+                <div class="cards" id="card4">
+                    <div class="overlay">
+                        <h4>X - RAYS</h4>
+                        <p>
+                            Precision matters in diagnostics, and our X-ray services provide accurate insights into your health. With state-of-the-art technology, we ensure you receive clear, detailed images that guide effective treatment.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card5">
+                    <div class="overlay">
+                        <h4>Orthopedic Surgeon</h4>
+                        <p>
+                            From fractures to joint pain, our orthopedic specialists are here to restore your mobility and ease your discomfort. We focus on getting you back to the activities you love, pain-free and stronger than before.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card6">
+                    <div class="overlay">
+                        <h4>OPD (Outpatient Department):</h4>
+                        <p>
+                            Our OPD services are designed for your convenience, offering expert care without the need for extended stays. With quick access to consultations and treatments, we make healthcare accessible and efficient.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card7">
+                    <div class="overlay">
+                        <h4>DENTIST</h4>
+                        <p>
+                            We offer top-tier dental care, knowing that patients are deeply concerned about their dental hygiene and facial aesthetics. A healthy smile is our ultimate goal, ensuring that every visit leaves you more confident and cared for.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards" id="card8">
+                    <div class="overlay">
+                        <h4>General Practitioner</h4>
+                        <p>
+                            Expert advice is just a click away with our consultation services, connecting you to top doctors in various specialties. Whether you need a second opinion or a detailed diagnosis, our platform ensures you receive personalized, professional guidance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div id="page3">
+                    <div id="text">
+                        <h2>Overview</h2>
+                        <p>In this navigation section, users will find a variety of services tailored to meet the healthcare needs of both doctors and patients. Each shortcut button guides users to detailed pages that enhance the communication and interaction between medical professionals and those seeking care. These services cover essential aspects of healthcare management and patient support.</p>
+                        <div class="navigation-section">
+                            <h2>What Users Can Explore:</h2>
+                            
+                            <div class="topic">
+                                <h3>Doctor Profiles:
+                                </h3>
+                                <ul>
+                                    <li>Access detailed profiles of the best doctors across various specialties.</li>
+                                    <li>View qualifications, experience, and areas of expertise to make informed decisions about your healthcare.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="topic">
+                                <h3>Appointment:</h3>
+                                <ul>
+                                    <li>Easily schedule appointments with your preferred doctors at your convenience.</li>
+                                    <li>Use our streamlined system to book, reschedule, or cancel appointments with just a few clicks.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="topic">
+                                <h3>Records:</h3>
+                                <ul>
+                                    <li>Manage and update your medical history and records securely.</li>
+                                    <li>Doctors can review patient records before appointments, ensuring personalized and effective care.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="topic">
+                                <h3>Consultation:</h3>
+                                <ul>
+                                    <li>Connect with doctors for in-person or virtual consultations.</li>
+                                    <li>Discuss your health concerns directly with specialists, and receive expert advice and treatment plans.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="topic">
+                                <h3>Health:</h3>
+                                <ul>
+                                    <li>Track your health metrics and follow your treatment progress.</li>
+                                    <li>Doctors can monitor patient data remotely, providing timely interventions and adjustments to treatment plans.</li>
+                                </ul>
+                            </div>
+                            
+                            <p>This section serves as a comprehensive gateway for users to enhance their healthcare experience, ensuring effective communication and seamless interactions between doctors and patients.</p>
+                        </div>
+                    </div>
+
+                
+                    <div id="btns">
+                        <div class="bts">
+                            <a href="https://example.com/privacy-techniques"> <button>Profiles</button></a>
+                           
+                        </div>
+                        <div class="bts">
+                            <a href="https://example.com/privacy-techniques">
+                            <button>Appointment</button></a>
+
+                        </div>
+                        <div class="bts">
+                            <a href="https://example.com/privacy-techniques"><button>Reports/Records</button></a>
+                            
+                        </div>
+                        <div class="bts">
+                            <a href="https://example.com/privacy-techniques"> <button>Consultation</button></a>
+                           
+                        </div>
+                        <div class="bts">
+                            <a href="https://example.com/privacy-techniques"><button>Health</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="page4">
+                    </div>
+                    <div id="scroller">
+                        <div id="scroller-in">
+                            <h4>Diagnosis</h4>
+                            <h4>Treatment</h4>
+                            <h4>Surgery</h4>
+                            <h4>Care</h4>
+                        </div>
+                        <div id="scroller-in">
+                            <h4>Diagnosis</h4>
+                            <h4>Treatment</h4>
+                            <h4>Surgery</h4>
+                            <h4>Care</h4>
+                        </div>
+                    </div>
+                    <center><h1>About our team</h1></center>
+                    <div class="card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner1">
+                            <div class="flip-card-front1">
+                                <p class="title">Member 1</p>
+                                <p style="color: black;">SUNEHA PASSI</p>
+                                <p>
+                                    2310992538
+                                </p>
+                            </div>
+                            <div class="flip-card-back1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner2">
+                            <div class="flip-card-front2">
+                                <p class="title">Member 2</p>
+                                <p style="color: black;">RESHIV</p>
+                                <p>2310992271</p>
+                            </div>
+                            <div class="flip-card-back2">
+                                <p class="title"></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+                
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

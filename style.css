@@ -1,0 +1,461 @@
+/* Global styles */
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    
+}
+
+/* Full height and width for html and body */
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Flexbox for body */
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000, #333);
+    overflow-x:hidden ;
+}
+
+/* Cursor blur effect */
+#cursor-blur {
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 0;
+    filter: blur(30px);
+}
+
+/* Navigation bar styles */
+#nav {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+margin-left: 0;
+    gap: 45px;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+}
+
+#nav img {
+    height: 100px;
+    filter: invert(100%) brightness(200%);
+}
+
+#nav h4 {
+    text-transform: uppercase;
+}
+
+
+
+
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    z-index: -1;
+    position: fixed;
+}
+
+/* Main content styles */
+#main {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Page 1 styles */
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page1 h1 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #22cac7;
+}
+
+#page1 h1::before {
+    content: "EVERY . LIFE . MATTERS";
+    position: absolute;
+    color: white;
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 1px violet;
+}
+
+#page1 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#page1 p {
+    font-size: 15px;
+    font-weight: 900;
+    width: 70%;
+}
+
+/* Page 2 styles */
+#page2 {
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 99;
+}
+/* Existing styles */
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  #scroller::-webkit-scrollbar {
+    display: none;
+  }
+  #scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color:transparent;
+    -webkit-text-stroke: 2px #c684ff;
+  }
+  #scroller h4:hover {
+    color: #c684ff;
+    text-shadow: 1px 1px 15px #c684ff;
+  
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+/* Cards Container */
+#cards-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Individual Cards */
+.cards {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+    position: relative;
+}
+
+/* Background Images */
+#card1 {
+    background-image: url('/MAIN/eye.jpg');
+}
+#card2 {
+    background-image: url('/MAIN/heart.jpg');
+}
+#card3 {
+    background-image: url('/MAIN/mri.jpg');
+}
+#card4 {
+    background-image: url('/MAIN/x.jpg');
+}
+#card5 {
+    background-image: url('/MAIN/ortho.jpg');
+}
+#card6 {
+    background-image: url('/MAIN/opd.jpg');
+}
+#card7 {
+    background-image: url('/MAIN/dentist.jpg');
+}
+#card8 {
+    background-image: url('/MAIN/doc.jpg');
+}
+
+/* Overlay Styles */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 255, 195);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+/* Overlay Text Styles */
+.overlay h4 {
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 16px;
+}
+
+/* Hover Effect */
+.cards:hover .overlay {
+    opacity: 1;
+}
+#page3{
+    height: 130vh;
+    width: 100vw;
+    z-index: 999;
+    position: relative;
+}
+#page4{
+    height: 100%;
+    width: 100vw;
+    z-index: 99;
+    margin-top: 300px;
+}
+#text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: auto;
+    width: 80%;
+    border: #c684ff 1px solid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 30px;
+    padding: 20px;
+    text-wrap: wrap;
+    margin-left: 10%
+}
+#btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index:0;
+}
+.bts button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background-color: #240046;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+    z-index: 1;
+  }
+
+.bts button:hover {
+    background-color: #5a189a;
+    color: #e0aaff;
+  }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    .cards {
+        height: 250px;
+        width: 50%;
+    }
+  
+}
+
+@media (max-width: 695px) {
+
+    .cards {
+        height: 250px;
+        width: 50%;
+    }
+    
+}
+@media (max-width: 530px) {
+
+    .cards {
+        height: 250px;
+        width: 50%;
+    }
+    
+}
+@media (max-width: 450px) {
+
+    .cards {
+
+        height: 200px;
+        width: 100%;
+    }
+
+    .overlay h4 {
+        font-size: 20px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+    
+    
+}
+
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+    z-index: 10;
+    background:linear-gradient(to bottom,rgb(0, 0, 0), #013467);
+
+  }
+  
+  .flip-card {
+   
+    width: 190px;
+    height: 254px;
+   
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .flip-card-inner1 {
+   
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner1 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front1, .flip-card-back1 {
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front1 {
+    background: linear-gradient(120deg, rgb(191, 103, 255), rgb(124, 2, 255) 88%);
+  }
+  
+  .flip-card-back1 {
+    background:url(/MAIN/suneha.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  
+
+
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+    box-shadow: 0 8px 14px 0 rgba(255, 255, 255, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front2 {
+    background: linear-gradient(120deg, rgb(191, 103, 255), rgb(124, 2, 255) 88%);
+  }
+  
+  .flip-card-back2 {
+    background:url(/MAIN/reshiv.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+
+  }
+
